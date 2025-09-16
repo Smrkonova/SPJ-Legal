@@ -1,0 +1,176 @@
+.practice {
+  padding: 16rem 0 2rem;
+
+  @media #{$xs} {
+    padding: 14rem 0 2rem;
+  }
+
+  &__title {
+    margin: 0 0 4rem;
+    text-align: center;
+
+    h2 {
+      color: $primary;
+
+      font-size: 3.6rem;
+      font-weight: 500;
+      margin: 0 0 1rem;
+
+      @media #{$xs} {
+        font-size: 2.8rem;
+      }
+    }
+
+    p {
+      color: #777;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin: 0;
+
+      @media #{$xs} {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0 0;
+
+    @media #{$xs} {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 1.8rem 0 0;
+      gap: 1.4rem;
+    }
+
+    @media #{$md} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__card {
+    padding: 2rem;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    display: block;
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 1.6rem 0 1rem;
+      color: $primary;
+
+
+      @media #{$xs} {
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #777;
+      margin: 0 0 1rem;
+
+      @media #{$xs} {
+        font-size: 1.4rem;
+      }
+    }
+
+    h5 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin: 0;
+      color: #000;
+
+
+      span {
+        color: #000;
+        font-weight: 600;
+
+
+      }
+    }
+
+  }
+
+  &__img {
+    img {
+      border-radius: 0.8rem;
+
+    }
+  }
+
+  &__cont {
+    margin: 0 0 3rem;
+
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: $primary;
+
+
+      @media #{$xs} {
+        font-size: 2rem;
+      }
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: $primary;
+
+
+      @media #{$xs} {
+        font-size: 1.8rem;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #777;
+      margin: 0 0 1rem;
+
+      @media #{$xs} {
+        font-size: 1.4rem;
+      }
+
+      span {
+        color: $primary;
+
+        font-weight: 500;
+      }
+    }
+
+    ul {
+      padding: 0 0 0 3rem;
+      margin: 1rem 0;
+
+      li {
+        list-style-type: disc;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #777;
+      }
+    }
+  }
+
+  &__banner {
+    margin: 0 0 2rem;
+    text-align: center;
+
+    img {
+      border-radius: 0.8rem;
+      max-width: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+}

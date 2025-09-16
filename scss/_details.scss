@@ -1,0 +1,31 @@
+.details {
+  padding: 16rem 0 2rem;
+  &__title {
+    h2 {
+      font-size: 4.8rem;
+      font-weight: 500;
+      margin: 0 0 1rem;
+      color: #333;
+    }
+    span {
+      font-size: 1.4rem;
+      font-weight: 400;
+      display: block;
+      color: #999;
+    }
+  }
+  &__content {
+    p {
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0 0 1rem;
+      color: #666;
+    }
+  }
+  &__img {
+    margin: 2rem 0;
+  }
+}
+.border-line {
+  border-bottom: 0.1rem solid #ddd;
+}
