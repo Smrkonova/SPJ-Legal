@@ -445,7 +445,7 @@
 }
 @media (max-width: 767px) {
   .about__content {
-    padding: 2rem 0 0;
+    padding: 0 0 2rem;
     text-align: center;
   }
 }
@@ -1544,7 +1544,7 @@ img {
 }
 
 .thankyou-container p {
-  color: #b9b9b9;
+  color: #000;
   margin-bottom: 24px;
   font-size: 1.8rem;
   font-size: 2rem;
