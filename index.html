@@ -262,43 +262,43 @@
         </div>
         <div class="modal-body">
           <div class="contact__form">
-            <form>
+            <form action="./join.php" method="POST">
               <div class="row">
                 <div class="col-md-12">
                   <div class="mb-4">
                     <label class="form-label">Full Name</label>
-                    <input type="text" class="form-control" placeholder="Enter Here">
+                    <input type="text" name="name" class="form-control" placeholder="Enter Here" required>
                   </div>
                 </div>
+
                 <div class="col-md-12">
                   <div class="mb-4">
                     <label class="form-label">Email Address</label>
-                    <input type="email" class="form-control" placeholder="Enter Here">
+                    <input type="email" name="email" class="form-control" placeholder="Enter Here" required>
                   </div>
                 </div>
+
                 <div class="col-md-12">
                   <div class="mb-4">
                     <label class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" placeholder="Enter Here">
+                    <input type="text" name="phone" class="form-control" placeholder="Enter Here" required>
                   </div>
                 </div>
 
                 <div class="col-md-12">
                   <div class="mb-4">
                     <label class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Here"
-                      rows="5"></textarea>
+                    <textarea name="message" class="form-control" placeholder="Enter Here" rows="5" required></textarea>
                   </div>
                 </div>
               </div>
+
               <div class="contact__btn">
                 <button type="submit" class="default-btn">Submit</button>
               </div>
             </form>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>
