@@ -1,10 +1,8 @@
-// Load header
 fetch('/./shared/header.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById('header').innerHTML = data;
 
-        // Get the header and navbar toggler button
         const header = document.querySelector("header.header");
         const navbarToggler = document.querySelector(".navbar-toggler");
 
@@ -13,13 +11,26 @@ fetch('/./shared/header.html')
             if (window.scrollY > 50) {
                 header.classList.add("scrolled");
             } else {
-                header.classList.remove("scrolled");
+                // Remove only if navbar not open
+                if (!navbarToggler.classList.contains("active")) {
+                    header.classList.remove("scrolled");
+                }
             }
         });
 
         // Navbar toggler click event listener
         navbarToggler.addEventListener("click", () => {
-            header.classList.toggle("scrolled");
+            navbarToggler.classList.toggle("active");
+
+            // If opening menu → add 'scrolled'
+            if (navbarToggler.classList.contains("active")) {
+                header.classList.add("scrolled");
+            } else {
+                // If closing and page is not scrolled → remove 'scrolled'
+                if (window.scrollY <= 50) {
+                    header.classList.remove("scrolled");
+                }
+            }
         });
 
         // Initialize scroll state
@@ -29,8 +40,7 @@ fetch('/./shared/header.html')
 
         // Add modal functionality
         initDisclaimerModal();
-    })
-    .catch(error => console.error('Error loading header:', error));
+    });
 
 function initDisclaimerModal() {
     // Check if user has already agreed

@@ -59,6 +59,7 @@
 
         @media #{$xs} {
             padding: 2rem 0 0;
+            text-align: center;
         }
 
         h2 {
@@ -166,6 +167,10 @@
         border: 0.1rem solid $primary;
         padding: 2rem;
         border-radius: 0.8rem;
+
+        @media #{$xs} {
+            text-align: center;
+        }
 
         h4 {
             font-size: 2rem;

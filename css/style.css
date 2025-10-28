@@ -68,6 +68,11 @@
   border-radius: 0.8rem;
   display: block;
 }
+@media (max-width: 767px) {
+  .practice__card {
+    text-align: center;
+  }
+}
 .practice__card h4 {
   font-size: 2rem;
   font-weight: 600;
@@ -105,6 +110,11 @@
 }
 .practice__cont {
   margin: 0 0 3rem;
+}
+@media (max-width: 767px) {
+  .practice__cont {
+    text-align: center;
+  }
 }
 .practice__cont h3 {
   font-size: 2.4rem;
@@ -436,6 +446,7 @@
 @media (max-width: 767px) {
   .about__content {
     padding: 2rem 0 0;
+    text-align: center;
   }
 }
 .about__content h2 {
@@ -538,6 +549,11 @@
   border: 0.1rem solid #001743;
   padding: 2rem;
   border-radius: 0.8rem;
+}
+@media (max-width: 767px) {
+  .about__card {
+    text-align: center;
+  }
 }
 .about__card h4 {
   font-size: 2rem;
@@ -772,6 +788,11 @@
   background-color: #f9f9f9;
 }
 @media (max-width: 767px) {
+  .footer {
+    padding: 6rem 0 10rem;
+  }
+}
+@media (max-width: 767px) {
   .footer__one {
     margin: 0 0 3rem;
     text-align: center;
@@ -891,7 +912,7 @@
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .footer__copyright {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -918,6 +939,11 @@
   font-weight: 400;
   color: #000;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .footer__copyright p {
+    text-align: center;
+  }
 }
 .footer__copyright p span {
   font-weight: 700;
@@ -1062,6 +1088,11 @@ img {
   z-index: 1;
   position: relative;
 }
+@media (max-width: 767px) {
+  .banner__content {
+    text-align: center;
+  }
+}
 .banner__content p {
   font-size: 1.8rem;
   font-weight: 400;
@@ -1111,6 +1142,11 @@ img {
   inset: 0;
   background-color: rgba(13, 2, 69, 0.25);
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .banner .swiper-slide::before {
+    background-color: rgba(13, 2, 69, 0.45);
+  }
 }
 
 .service {
@@ -1167,6 +1203,11 @@ img {
 .service__card {
   padding: 2rem;
 }
+@media (max-width: 767px) {
+  .service__card {
+    text-align: center;
+  }
+}
 .service__card h3 {
   font-size: 2.4rem;
   color: #001743;
@@ -1188,6 +1229,11 @@ img {
   width: 5rem;
   height: 0.1rem;
   background-color: #001743;
+}
+@media (max-width: 767px) {
+  .service__card h3::after {
+    content: unset;
+  }
 }
 .service__card p {
   color: #777;
@@ -1252,6 +1298,11 @@ img {
 }
 .article__content {
   margin: 2rem 0 0;
+}
+@media (max-width: 767px) {
+  .article__content {
+    text-align: center;
+  }
 }
 .article__content span {
   font-size: 1.4rem;
@@ -1508,4 +1559,8 @@ img {
   padding: 1.4rem 3.8rem;
   border-radius: 0.6rem;
   display: inline-block;
+}
+
+.white-header .header {
+  background-color: #fff !important;
 }/*# sourceMappingURL=style.css.map */

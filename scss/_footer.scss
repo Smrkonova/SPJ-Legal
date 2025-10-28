@@ -2,6 +2,10 @@
     padding: 6rem 0;
     background-color: #f9f9f9;
 
+    @media #{$xs} {
+        padding: 6rem 0 10rem;
+    }
+
     &__one {
         @media #{$xs} {
             margin: 0 0 3rem;
@@ -137,7 +141,7 @@
         align-items: center;
         justify-content: space-between;
 
-        @media #{$xs} {
+        @media #{$xm} {
             flex-direction: column-reverse;
             gap: 2rem;
         }
@@ -166,6 +170,10 @@
             font-weight: 400;
             color: #000;
             margin: 0;
+
+            @media #{$xs} {
+                text-align: center;
+            }
 
             span {
                 font-weight: 700;

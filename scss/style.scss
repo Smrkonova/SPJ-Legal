@@ -111,6 +111,10 @@ img {
     z-index: 1;
     position: relative;
 
+    @media #{$xs} {
+      text-align: center;
+    }
+
     p {
       font-size: 1.8rem;
       font-weight: 400;
@@ -162,6 +166,11 @@ img {
   inset: 0;
   background-color: rgba(13, 2, 69, 0.25);
   z-index: 1;
+
+  @media #{$xs} {
+    background-color: rgba(13, 2, 69, 0.45);
+
+  }
 }
 
 
@@ -218,6 +227,10 @@ img {
   &__card {
     padding: 2rem;
 
+    @media #{$xs} {
+      text-align: center;
+    }
+
     h3 {
       font-size: 2.4rem;
       color: $primary;
@@ -238,6 +251,10 @@ img {
         width: 5rem;
         height: 0.1rem;
         background-color: $primary;
+
+        @media #{$xs} {
+          content: unset;
+        }
       }
     }
 
@@ -313,6 +330,10 @@ img {
 
   &__content {
     margin: 2rem 0 0;
+
+    @media #{$xs} {
+      text-align: center;
+    }
 
     span {
       font-size: 1.4rem;
@@ -586,4 +607,10 @@ img {
   padding: 1.4rem 3.8rem;
   border-radius: 0.6rem;
   display: inline-block;
+}
+
+.white-header {
+  .header {
+    background-color: #fff !important;
+  }
 }
