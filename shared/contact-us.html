@@ -60,47 +60,47 @@
         <div class="col-xl-6 col-lg-6 col-md-7">
           <div class="contact__left">
             <div class="contact__form">
-              <form>
+              <form action="../mail.php" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="mb-4">
                       <label class="form-label">Full Name</label>
-                      <input type="text" class="form-control" placeholder="Enter Here">
+                      <input type="text" name="name" class="form-control" placeholder="Enter Here" required>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
                       <label class="form-label">Company/Organization</label>
-                      <input type="text" class="form-control" placeholder="Enter Here">
+                      <input type="text" name="company" class="form-control" placeholder="Enter Here">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
                       <label class="form-label">Email Address</label>
-                      <input type="email" class="form-control" placeholder="Enter Here">
+                      <input type="email" name="email" class="form-control" placeholder="Enter Here" required>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="mb-4">
                       <label class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" placeholder="Enter Here">
+                      <input type="text" name="phone" class="form-control" placeholder="Enter Here" required>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-4">
                       <label class="form-label">Practice Area of Interest</label>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>High Court Litigation</option>
-                        <option value="1">Civil Litigation</option>
-                        <option value="2">Others</option>
+                      <select class="form-select" name="practice_area" required>
+                        <option value="High Court Litigation">High Court Litigation</option>
+                        <option value="Civil Litigation">Civil Litigation</option>
+                        <option value="Others">Others</option>
                       </select>
                     </div>
                   </div>
-
                   <div class="col-md-12">
                     <div class="mb-4">
                       <label class="form-label">Brief Description of Legal Matter</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                      <textarea class="form-control" name="message" rows="5" placeholder="Enter Here"
+                        required></textarea>
                     </div>
                   </div>
                 </div>
@@ -109,6 +109,7 @@
                 </div>
               </form>
             </div>
+
           </div>
         </div>
       </div>
