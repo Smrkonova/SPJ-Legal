@@ -10,6 +10,17 @@
   margin: 0 0 4rem;
   text-align: center;
 }
+.practice__title h1 {
+  color: #001743;
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+@media (max-width: 767px) {
+  .practice__title h1 {
+    font-size: 2.8rem;
+  }
+}
 .practice__title h2 {
   color: #001743;
   font-size: 3.6rem;
@@ -654,6 +665,12 @@
   margin-bottom: 20px;
   line-height: 1.6;
   color: #555;
+  overflow: auto;
+}
+@media (max-width: 767px) {
+  .model-body {
+    height: 30rem;
+  }
 }
 
 .model-footer {
@@ -712,6 +729,31 @@
 .disclaimer-points li {
   margin-bottom: 5px;
   font-size: 14px;
+}
+
+.sticky-cta {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 1000;
+  animation: bounce-sticky 3s infinite;
+}
+.sticky-cta a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sticky-cta a span {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .footer {
