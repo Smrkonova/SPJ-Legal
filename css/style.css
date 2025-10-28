@@ -397,9 +397,20 @@
   text-align: center;
   margin: 0 0 6rem;
 }
-.about__title h1 {
+.about__title span {
   color: #001743;
   font-size: 3.6rem;
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+@media (max-width: 767px) {
+  .about__title span {
+    font-size: 2.8rem;
+  }
+}
+.about__title h1 {
+  color: #000;
+  font-size: 2rem;
   font-weight: 500;
   margin: 0 0 1rem;
 }
