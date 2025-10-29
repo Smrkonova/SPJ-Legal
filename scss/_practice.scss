@@ -90,9 +90,17 @@
       font-weight: 400;
       color: #777;
       margin: 0 0 1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      /* Show only 3 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-align: justify;
+
 
       @media #{$xs} {
         font-size: 1.4rem;
+        text-align: center;
       }
     }
 
@@ -156,9 +164,11 @@
       font-weight: 400;
       color: #777;
       margin: 0 0 1rem;
+      text-align: justify;
 
       @media #{$xs} {
         font-size: 1.4rem;
+        text-align: center;
       }
 
       span {

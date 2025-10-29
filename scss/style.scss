@@ -21,6 +21,7 @@ body {
   font-family: "Times New Roman", Times, serif !important;
   font-size: 1.4rem;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 a {
@@ -120,6 +121,11 @@ img {
       font-weight: 400;
       margin: 0 0 1.6rem;
       color: #fff;
+      text-align: justify;
+
+      @media #{$xs} {
+        text-align: center;
+      }
     }
 
     h1 {
@@ -263,6 +269,15 @@ img {
       font-size: 1.4rem;
       font-weight: 400;
       margin: 0 0 1rem;
+      text-align: justify;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      @media #{$xs} {
+        text-align: center;
+      }
     }
 
     a {

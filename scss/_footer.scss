@@ -1,6 +1,7 @@
 .footer {
     padding: 6rem 0;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 
     @media #{$xs} {
         padding: 6rem 0 10rem;
@@ -17,6 +18,11 @@
             font-weight: 500;
             margin: 2rem 0 0;
             color: #000;
+            text-align: justify;
+
+            @media #{$xs} {
+                text-align: center;
+            }
 
             @media #{$xm} {
                 font-size: 1.4rem;
