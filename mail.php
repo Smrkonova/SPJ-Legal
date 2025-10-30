@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recipient email
-    $to = "ssuryareddy2277@gmail.com"; // <-- change to your email
+    $to = "saji@spjlegal.com"; // <-- change to your email
     $subject = "New Contact Form Submission from Website";
 
     // Email Body
