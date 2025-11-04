@@ -256,6 +256,18 @@
     &__contact-flex {
         display: flex;
         flex-direction: column;
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #001743;
+            display: block;
+            margin: 0 0 0.4rem;
+
+            @media #{$xs} {
+                text-align: center;
+            }
+        }
     }
 
 }

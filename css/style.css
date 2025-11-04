@@ -1041,6 +1041,18 @@
   display: flex;
   flex-direction: column;
 }
+.footer__contact-flex h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #001743;
+  display: block;
+  margin: 0 0 0.4rem;
+}
+@media (max-width: 767px) {
+  .footer__contact-flex h3 {
+    text-align: center;
+  }
+}
 
 * {
   box-sizing: border-box;
