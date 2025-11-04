@@ -393,7 +393,7 @@ img {
 
 .career {
   padding: 8rem 0;
-  background-color: #f9f9f9;
+  background-color: #fff;
 
   @media #{$xs} {
     padding: 4rem 0;
@@ -412,6 +412,18 @@ img {
       @media #{$xs} {
         font-size: 2.8rem;
       }
+    }
+  }
+
+  &__box {
+    border: 0.1rem solid $primary;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    max-width: 60%;
+    margin: 0 auto;
+
+    @media #{$xm} {
+      max-width: 100%;
     }
   }
 
@@ -448,7 +460,7 @@ img {
 
 
 .article-page {
-  padding: 16rem 0 2rem;
+  padding: 16rem 0 6rem;
 
   @media #{$xs} {
     padding: 12rem 0 2rem;
@@ -457,7 +469,7 @@ img {
 
 .team {
   padding: 8rem 0;
-  background-color: #f9f9f9;
+  background-color: #fff;
 
   @media #{$xs} {
     padding: 4rem 0;
@@ -628,4 +640,13 @@ img {
   .header {
     background-color: #fff !important;
   }
+}
+
+.new-contact {
+  padding: 8rem 0 0;
+
+  @media #{$xs} {
+    padding: 4rem 0 0;
+  }
+
 }

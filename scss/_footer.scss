@@ -87,8 +87,13 @@
             li {
                 list-style-type: none;
                 display: flex;
-                align-items: center;
+                align-items: baseline;
                 gap: 1rem;
+
+                @media #{$xs} {
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 img {
                     width: 1.6rem;
@@ -101,6 +106,10 @@
                     font-weight: 500;
                     color: #000;
                     display: block;
+
+                    @media #{$xs} {
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -242,6 +251,11 @@
                 font-size: 1.4rem;
             }
         }
+    }
+
+    &__contact-flex {
+        display: flex;
+        flex-direction: column;
     }
 
 }

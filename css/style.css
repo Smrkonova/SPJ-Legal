@@ -1,5 +1,5 @@
 .practice {
-  padding: 16rem 0 2rem;
+  padding: 16rem 0 6rem;
 }
 @media (max-width: 767px) {
   .practice {
@@ -240,8 +240,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  max-width: 70%;
-  margin: 0 auto;
 }
 @media (max-width: 767px) {
   .contact__grid {
@@ -263,12 +261,20 @@
 }
 .contact__card a,
 .contact__card h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  margin: 2rem 0 0;
-  color: #001743;
+  margin: 0;
+  color: #000;
   text-align: center;
   display: block;
+}
+.contact__card h3 {
+  font-size: 2rem;
+  color: #001743;
+  margin: 1rem 0;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
 }
 .contact__img {
   text-align: center;
@@ -475,11 +481,13 @@
   font-weight: 500;
   margin: 0 0 2rem;
   color: #000;
+  text-align: justify;
 }
 @media (max-width: 767px) {
   .about__content h3 {
     font-size: 2.4rem;
     margin: 0 0 1rem;
+    text-align: center;
   }
 }
 .about__content h4 {
@@ -879,8 +887,14 @@
 .footer__end ul li {
   list-style-type: none;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
+}
+@media (max-width: 767px) {
+  .footer__end ul li {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .footer__end ul li img {
   width: 1.6rem;
@@ -892,6 +906,12 @@
   font-weight: 500;
   color: #000;
   display: block;
+}
+@media (max-width: 767px) {
+  .footer__end ul li span,
+  .footer__end ul li a {
+    text-align: center;
+  }
 }
 .footer__social {
   display: flex;
@@ -1016,6 +1036,10 @@
   .footer__disc p {
     font-size: 1.4rem;
   }
+}
+.footer__contact-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 * {
@@ -1379,7 +1403,7 @@ img {
 
 .career {
   padding: 8rem 0;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 @media (max-width: 767px) {
   .career {
@@ -1399,6 +1423,18 @@ img {
 @media (max-width: 767px) {
   .career__title h2 {
     font-size: 2.8rem;
+  }
+}
+.career__box {
+  border: 0.1rem solid #001743;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  max-width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .career__box {
+    max-width: 100%;
   }
 }
 .career__content {
@@ -1430,7 +1466,7 @@ img {
 }
 
 .article-page {
-  padding: 16rem 0 2rem;
+  padding: 16rem 0 6rem;
 }
 @media (max-width: 767px) {
   .article-page {
@@ -1440,7 +1476,7 @@ img {
 
 .team {
   padding: 8rem 0;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 @media (max-width: 767px) {
   .team {
@@ -1599,4 +1635,13 @@ img {
 
 .white-header .header {
   background-color: #fff !important;
+}
+
+.new-contact {
+  padding: 8rem 0 0;
+}
+@media (max-width: 767px) {
+  .new-contact {
+    padding: 4rem 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */

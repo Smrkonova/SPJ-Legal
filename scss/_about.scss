@@ -78,11 +78,13 @@
             font-weight: 500;
             margin: 0 0 2rem;
             color: #000;
+            text-align: justify;
 
 
             @media #{$xs} {
                 font-size: 2.4rem;
                 margin: 0 0 1rem;
+                text-align: center;
             }
         }
 
