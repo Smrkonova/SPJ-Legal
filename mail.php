@@ -1,12 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data safely
-    $name          = isset($_POST['name']) ? trim($_POST['name']) : '';
-    $company       = isset($_POST['company']) ? trim($_POST['company']) : '';
-    $email         = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $phone         = isset($_POST['phone']) ? trim($_POST['phone']) : '';
-    $practice_area = isset($_POST['practice_area']) ? trim($_POST['practice_area']) : '';
-    $message       = isset($_POST['message']) ? trim($_POST['message']) : '';
+    $name    = isset($_POST['name']) ? trim($_POST['name']) : '';
+    $company = isset($_POST['company']) ? trim($_POST['company']) : '';
+    $email   = isset($_POST['email']) ? trim($_POST['email']) : '';
+    $phone   = isset($_POST['phone']) ? trim($_POST['phone']) : '';
+    $message = isset($_POST['message']) ? trim($_POST['message']) : '';
 
     // Validation
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
@@ -37,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p><span class='label'>Company/Organization:</span> {$company}</p>
             <p><span class='label'>Email Address:</span> {$email}</p>
             <p><span class='label'>Phone Number:</span> {$phone}</p>
-            <p><span class='label'>Practice Area of Interest:</span> {$practice_area}</p>
             <p><span class='label'>Brief Description of Legal Matter:</span><br>" . nl2br($message) . "</p>
         </div>
     </body>

@@ -203,4 +203,20 @@
     }
   }
 
+  &__soon {
+    padding: 10rem 0;
+
+    h2 {
+      color: $primary;
+      text-align: center;
+      font-size: 7.4rem;
+      font-weight: 500;
+      margin: 0 0 1rem;
+
+      @media #{$xs} {
+        font-size: 5.4rem;
+      }
+    }
+  }
+
 }
